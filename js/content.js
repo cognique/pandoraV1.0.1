@@ -759,11 +759,13 @@ var renderHTML = {
 
         var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
+        var inAppBrowserTest = window.open("http://apache.org", "_blank", "location=yes");
+
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
             '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
-            '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +
+            '<a href="#" onclick="' + inAppBrowserTest + '" class="big-button skill-level" target="_blank">TWITTER</a>' +
             '</div>' +
             '</section>';
         $('.container').html(html);
