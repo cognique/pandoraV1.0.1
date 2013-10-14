@@ -20,9 +20,5 @@
     <preference name="orientation" value="portrait" />
 
     <gap:platform name="ios" />
-    <gap:platform name="android" />
-
-    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-    <plugin name="InAppBrowser" value="CDVInAppBrowser" />
 
 </widget>
