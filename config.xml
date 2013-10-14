@@ -17,6 +17,8 @@
         Cognique
     </author>
 
+    <preference name="orientation" value="portrait" />
+
     <gap:platform name="ios" />
     <gap:platform name="android" />
 
