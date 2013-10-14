@@ -6,7 +6,7 @@
 
 var overallScore = 0;
 
-var levelAccessNumber = 0;
+var levelAccessNumber = 18;
 
 //=========================================================================================================================================
 // facebook API
@@ -666,8 +666,8 @@ var renderHTML = {
             '<div class="score-button-wrapper">' +
             '<a onclick="renderHTML.renderSkillLevelPage()" class="big-button score-page next-round" href="#">NEXT ROUND</a>' +
             '<a onclick="renderHTML.renderHomePage(); scoreCalculations.resetEverything()" class="big-button score-page" href="#">START AGAIN</a>' +
-            '<a class="big-button score-page" href="#" onclick="' + facebookWindowOpen + '">SHARE</a>' +
-            // '<a class="big-button score-page" href="javascript:{}" onclick="renderHTML.setStatusWithFeedDialog();">SHARE</a>' +
+            // '<a class="big-button score-page" href="#" onclick="' + facebookWindowOpen + '">SHARE</a>' +
+            '<a class="big-button score-page" href="javascript:{}" onclick="renderHTML.setStatusWithFeedDialog();">SHARE</a>' +
             '</div>' +
             '</section>';
         $('.container').html(html);
