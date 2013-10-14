@@ -759,7 +759,7 @@ var renderHTML = {
 
         var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
-        var inAppBrowserTest = window.open("http://apache.org", "_blank", "location=yes");
+        var inAppBrowserTest = "window.open('http://apache.org', '_blank', 'location=yes')";
 
         var html =
             '<section class="skill-level-page">' +
