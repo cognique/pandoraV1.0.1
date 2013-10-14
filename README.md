@@ -1,3 +1,3 @@
 pandora-october
 ===============
-first attempt at phonegap'ing the pandora app
+V1.0.1
