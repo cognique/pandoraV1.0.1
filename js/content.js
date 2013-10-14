@@ -666,8 +666,8 @@ var renderHTML = {
             '<div class="score-button-wrapper">' +
             '<a onclick="renderHTML.renderSkillLevelPage()" class="big-button score-page next-round" href="#">NEXT ROUND</a>' +
             '<a onclick="renderHTML.renderHomePage(); scoreCalculations.resetEverything()" class="big-button score-page" href="#">START AGAIN</a>' +
-            // '<a class="big-button score-page" href="#" onclick="' + facebookWindowOpen + '">SHARE</a>' +
-            '<a class="big-button score-page" href="javascript:{}" onclick="renderHTML.setStatusWithFeedDialog();">SHARE</a>' +
+            '<a class="big-button score-page" href="#" onclick="' + facebookWindowOpen + '">SHARE</a>' +
+            // '<a class="big-button score-page" href="javascript:{}" onclick="renderHTML.setStatusWithFeedDialog();">SHARE</a>' +
             '</div>' +
             '</section>';
         $('.container').html(html);
@@ -677,22 +677,22 @@ var renderHTML = {
         }
     },
 
-    setStatusWithFeedDialog : function() {
+    // setStatusWithFeedDialog : function() {
 
-        var percentage = scoreCalculations.percentageScore();
-        var ranking = scoreCalculations.ranking();
+    //     var percentage = scoreCalculations.percentageScore();
+    //     var ranking = scoreCalculations.ranking();
 
-        FB.ui({
-            percentage : scoreCalculations.percentageScore(),
-            ranking : scoreCalculations.ranking(),
-            method: 'feed',
-            name: 'Pandora Dress Agency',
-            link: 'http://www.pandoradressagency.com/',
-            picture: 'http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png',
-            caption: 'Guess the brand app',
-            description: ranking + ': I scored ' + percentage + '% on the Pandora Dress Agency App'
-        });
-    },
+    //     FB.ui({
+    //         percentage : scoreCalculations.percentageScore(),
+    //         ranking : scoreCalculations.ranking(),
+    //         method: 'feed',
+    //         name: 'Pandora Dress Agency',
+    //         link: 'http://www.pandoradressagency.com/',
+    //         picture: 'http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png',
+    //         caption: 'Guess the brand app',
+    //         description: ranking + ': I scored ' + percentage + '% on the Pandora Dress Agency App'
+    //     });
+    // },
 
     renderMapPage : function() {
         var html =
