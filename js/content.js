@@ -774,10 +774,10 @@ var renderHTML = {
 
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
-            "&name=name" +
-            "&caption=caption" +
-            "&description=description" +
-            "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
+            "&name=Pandora&nbsp;Dress&nbsp;Agency" +
+            "&caption=The&nbsp;Game&nbsp;App" +
+            "&description=Description&nbsp;goes&nbsp;here..." +
+            "&link=https%3A%2F%2Fwww.pandoradressagency.co.uk%2F" +
             "&app_id=491627374259881" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
