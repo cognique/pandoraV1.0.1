@@ -11,24 +11,24 @@ var levelAccessNumber = 0;
 //=========================================================================================================================================
 // facebook API
 
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '491627374259881', // App ID
-        channelUrl: '/channel.html', // Channel File
-        status: true,
-        cookie: true, // enable cookies to allow the server to access the session
-        xfbml: true  // parse XFBML
-    });
-};
+// window.fbAsyncInit = function () {
+//     FB.init({
+//         appId: '491627374259881', // App ID
+//         channelUrl: '/channel.html', // Channel File
+//         status: true,
+//         cookie: true, // enable cookies to allow the server to access the session
+//         xfbml: true  // parse XFBML
+//     });
+// };
 
-// Load the SDK Asynchronously
-(function (d) {
-    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-    if (d.getElementById(id)) { return; }
-    js = d.createElement('script'); js.id = id; js.async = true;
-    js.src = "//connect.facebook.net/en_US/all.js";
-    ref.parentNode.insertBefore(js, ref);
-} (document));
+// // Load the SDK Asynchronously
+// (function (d) {
+//     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+//     if (d.getElementById(id)) { return; }
+//     js = d.createElement('script'); js.id = id; js.async = true;
+//     js.src = "//connect.facebook.net/en_US/all.js";
+//     ref.parentNode.insertBefore(js, ref);
+// } (document));
 
 //=========================================================================================================================================
 // array containing all the questions. optionA is always the correct answer (i.e. evaluates true)
@@ -756,10 +756,17 @@ var renderHTML = {
             "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
             "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
+        $('#facebookID').click(function() {
+          var ref = window.open("http://www.google.com/", '_blank', 'location=yes');
+          ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+          ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+          ref.addEventListener('exit', function() { alert(event.type); });
+        });
+
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
-            '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
+            '<a id="facebookID" href="#" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             '<a href="#" onclick="window.open(\'https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game\', \'_blank\', \'location=no, menubar=no, resizable=no, scrollbars=no, status=no, titlebar=no, toolbar=no\')" class="big-button skill-level">TWITTER</a>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
