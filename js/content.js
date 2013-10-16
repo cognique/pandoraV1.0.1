@@ -765,18 +765,25 @@ var renderHTML = {
 
     childBrowserFunctionFACE : function() {
 
-        var facebook_standard = "https://www.facebook.com/dialog/feed?" +
-            "app_id=145634995501895" +
-            "&display=popup" +
-            "&caption=An%20example%20caption" +
-            "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
-            "&redirect_uri=https://developers.facebook.com/tools/explorer";
         var facebookInfo = {
             name: 'Pandora Dress Agency',
             caption: 'The Game App',
             description: 'Description goes here...',
             link: 'http://www.pandoradressagency.co.uk/'
         };
+
+        var facebook_standard = "https://www.facebook.com/dialog/feed?" +
+            "app_id=145634995501895" +
+            "&display=popup" +
+            //"&caption=An%20example%20caption" +
+
+            "&caption=" + facebookInfo.caption +
+            "&description=" + facebookInfo.description +
+            "&name=" + facebookInfo.name +  
+
+            "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
+            "&redirect_uri=https://developers.facebook.com/tools/explorer";
+
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
             "app_id=491627374259881" +
