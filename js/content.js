@@ -11,24 +11,24 @@ var levelAccessNumber = 0;
 //=========================================================================================================================================
 // facebook API
 
-// window.fbAsyncInit = function () {
-//     FB.init({
-//         appId: '491627374259881', // App ID
-//         channelUrl: '/channel.html', // Channel File
-//         status: true,
-//         cookie: true, // enable cookies to allow the server to access the session
-//         xfbml: true  // parse XFBML
-//     });
-// };
+window.fbAsyncInit = function () {
+    FB.init({
+        appId: '491627374259881', // App ID
+        channelUrl: 'http://pamela.cognique.co.uk/channel.html', // Channel File
+        status: true,
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: true  // parse XFBML
+    });
+};
 
-// // Load the SDK Asynchronously
-// (function (d) {
-//     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-//     if (d.getElementById(id)) { return; }
-//     js = d.createElement('script'); js.id = id; js.async = true;
-//     js.src = "//connect.facebook.net/en_US/all.js";
-//     ref.parentNode.insertBefore(js, ref);
-// } (document));
+// Load the SDK Asynchronously
+(function (d) {
+    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement('script'); js.id = id; js.async = true;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    ref.parentNode.insertBefore(js, ref);
+} (document));
 
 //=========================================================================================================================================
 // array containing all the questions. optionA is always the correct answer (i.e. evaluates true)
@@ -733,6 +733,13 @@ var renderHTML = {
 
     inAppBrowserFunction : function() {
 
+        var facebook_standard = "https://www.facebook.com/dialog/feed?" +
+            "app_id=145634995501895" +
+            "&display=popup" +
+            "&caption=An%20example%20caption" +
+            "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
+            "&redirect_uri=https://developers.facebook.com/tools/explorer";
+            
         var facebookInfo = {
             name: 'Pandora Dress Agency',
             caption: 'The Game App',
@@ -749,8 +756,8 @@ var renderHTML = {
             "&app_id=491627374259881" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-      
-      var ref = window.open(facebook_url, '_blank', 'location=yes');
+
+      var ref = window.open(facebook_standard, '_blank', 'location=yes');
       ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
       ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
       ref.addEventListener('exit', function() { alert(event.type); });
@@ -774,12 +781,12 @@ var renderHTML = {
         //     "&display=popup" +
         //     "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
-        var facebook_standard = "https://www.facebook.com/dialog/feed?" +
-            "app_id=145634995501895" +
-            "&display=popup" +
-            "&caption=An%20example%20caption" +
-            "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
-            "&redirect_uri=https://developers.facebook.com/tools/explorer";
+        // var facebook_standard = "https://www.facebook.com/dialog/feed?" +
+        //     "app_id=145634995501895" +
+        //     "&display=popup" +
+        //     "&caption=An%20example%20caption" +
+        //     "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
+        //     "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
         var html =
             '<section class="skill-level-page">' +
