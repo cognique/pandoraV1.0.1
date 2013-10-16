@@ -11,24 +11,24 @@ var levelAccessNumber = 18;
 //=========================================================================================================================================
 // facebook API
 
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '491627374259881', // App ID
-        channelUrl: 'http://pamela.cognique.co.uk/app/channel.html', // Channel File
-        status: true,
-        cookie: true, // enable cookies to allow the server to access the session
-        xfbml: true  // parse XFBML
-    });
-};
+// window.fbAsyncInit = function () {
+//     FB.init({
+//         appId: '491627374259881', // App ID
+//         channelUrl: 'http://pamela.cognique.co.uk/app/channel.html', // Channel File
+//         status: true,
+//         cookie: true, // enable cookies to allow the server to access the session
+//         xfbml: true  // parse XFBML
+//     });
+// };
 
-// Load the SDK Asynchronously
-(function (d) {
-    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-    if (d.getElementById(id)) { return; }
-    js = d.createElement('script'); js.id = id; js.async = true;
-    js.src = "//connect.facebook.net/en_US/all.js";
-    ref.parentNode.insertBefore(js, ref);
-} (document));
+// // Load the SDK Asynchronously
+// (function (d) {
+//     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+//     if (d.getElementById(id)) { return; }
+//     js = d.createElement('script'); js.id = id; js.async = true;
+//     js.src = "//connect.facebook.net/en_US/all.js";
+//     ref.parentNode.insertBefore(js, ref);
+// } (document));
 
 //=========================================================================================================================================
 // array containing all the questions. optionA is always the correct answer (i.e. evaluates true)
@@ -52,15 +52,15 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
       "optionC" : "Iceberg",
       "image"   : "beginner/Marc-Jacobs-1" },
 
-    { "optionA" : "Hermes",              // Series of questions - #4
+    { "optionA" : "Loewe",              // Series of questions - #4
       "optionB" : "Gianmarco Lorenzi",
       "optionC" : "Marni",
-      "image"   : "beginner/Hermes-1" },
+      "image"   : "beginner/Loewe-1" },
 
-    { "optionA" : "Baccarat",        // Series of questions - #5
+    { "optionA" : "Stella McCartney",        // Series of questions - #5
       "optionB" : "Windsmoor",
       "optionC" : "Ginka",
-      "image"   : "beginner/Baccarat-1" },
+      "image"   : "beginner/Stella-McCartney-1" },
 
     { "optionA" : "Christian Louboutin",        // Series of questions - #6
       "optionB" : "Fratelli Rossetti",
@@ -102,15 +102,15 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
       "optionC" : "Joan & David",
       "image"   : "beginner/Hermes-2" },
 
-    { "optionA" : "Chanel",              // Series of questions - #14
+    { "optionA" : "Balenciaga",              // Series of questions - #14
       "optionB" : "Liza Bruce",
       "optionC" : "Windsmoor",
-      "image"   : "beginner/Chanel-2" },
+      "image"   : "beginner/Balenciaga-1" },
 
-    { "optionA" : "Louis Vuitton",        // Series of questions - #15
+    { "optionA" : "Ferragamo",        // Series of questions - #15
       "optionB" : "Jason Wu",
       "optionC" : "Kenzo",
-      "image"   : "beginner/Louis-Vuitton-2" },
+      "image"   : "beginner/Ferragamo-2" },
 
     { "optionA" : "Hermes",        // Series of questions - #16
       "optionB" : "Voyage",
@@ -127,10 +127,10 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
       "optionC" : "Gripoix",
       "image"   : "beginner/Chanel-3" },
 
-    { "optionA" : "Hermes",        // Series of questions - #19
+    { "optionA" : "Bottega Venetta",        // Series of questions - #19
       "optionB" : "Gina",
       "optionC" : "Cartier",
-      "image"   : "beginner/Hermes-3" },
+      "image"   : "beginner/Bottega-Venetta-1" },
 
     { "optionA" : "Louis Vuitton",        // Series of questions - #20
       "optionB" : "Betty Barclay",
