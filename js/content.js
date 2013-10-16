@@ -761,8 +761,7 @@ var renderHTML = {
 
         var facebook_url2 = "https://www.facebook.com/dialog/feed?" +
             "app_id=145634995501895" +
-            "&display=popup" +
-            "&caption=" + facebookInfo.caption +
+            "&display=popup&caption=An%20example%20caption" +
             "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
             "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
