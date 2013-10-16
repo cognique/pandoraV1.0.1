@@ -21,8 +21,7 @@
 
     <gap:platform name="ios" />
 
-    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-    <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    <gap:plugin name="com.phonegap.plugins.childbrowser" />
 
 
 </widget>
