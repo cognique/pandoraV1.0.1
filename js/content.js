@@ -772,6 +772,13 @@ var renderHTML = {
             link: 'http://www.pandoradressagency.co.uk/'
         };
 
+        var facebook_url_sharer = 
+          "http://www.facebook.com/sharer.php?s=100" +
+          "&p[url]=http://www.pandoradressagency.co.uk/" +
+          "&p[images][0]=http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png" +
+          "&p[title]=Pandora Dress Agency" +
+          "&p[summary]=Description goes here...";
+
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
             "app_id=491627374259881" +
@@ -781,7 +788,8 @@ var renderHTML = {
             "&description=" + facebookInfo.description +
             "&name=" + facebookInfo.name +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-      window.plugins.childBrowser.showWebPage("https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pandoradressagency.co.uk%2F", { showLocationBar: true });      
+      
+      window.plugins.childBrowser.showWebPage(facebook_url_sharer, { showLocationBar: true });      
     },
 
     childBrowserFunctionTWIT : function() {
