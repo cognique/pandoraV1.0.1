@@ -753,7 +753,7 @@ var renderHTML = {
             "&link=" + facebookInfo.link +
             "&e2e=%7B%7D" +
             "&app_id=491627374259881" +
-            // "&redirect_uri=https://google.com/" +
+            "&redirect_uri=http://www.pandoradressagency.co.uk/" +
             "&locale=en_US" +
             "&sdk=joey" +
             "&display=popup" +
@@ -768,16 +768,15 @@ var renderHTML = {
             "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
             "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
-        var facebook_url3 = "https://www.facebook.com/dialog/feed?" +
+        var facebook_url4 = "https://www.facebook.com/dialog/feed?" +
             "app_id=491627374259881" +
             "&display=popup" +
-            "&caption=A%20pandora%20caption" +
-            "&link=http%3A%2F%2Fpandoradressagency.co.uk%2F" +
-            "&redirect_uri=https://developers.facebook.com/tools/explorer";
+            "&caption=" + facebookInfo.caption +
+            "&link=" + facebookInfo.link;
 
         var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
-        var facebookWindowOpen = "window.open('" + facebook_url3 + "', '_blank', 'location=yes')";
+        var facebookWindowOpen = "window.open('" + facebook_url + "', '_blank', 'location=yes')";
         var twitterWindowOpen = "window.open('" + twitter_url + "', '_blank', 'location=yes')";
 
         var html =
