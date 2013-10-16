@@ -6,29 +6,29 @@
 
 var overallScore = 0;
 
-var levelAccessNumber = 18;
+var levelAccessNumber = 0;
 
 //=========================================================================================================================================
 // facebook API
 
-// window.fbAsyncInit = function () {
-//     FB.init({
-//         appId: '491627374259881', // App ID
-//         channelUrl: 'http://pamela.cognique.co.uk/app/channel.html', // Channel File
-//         status: true,
-//         cookie: true, // enable cookies to allow the server to access the session
-//         xfbml: true  // parse XFBML
-//     });
-// };
+window.fbAsyncInit = function () {
+    FB.init({
+        appId: '491627374259881', // App ID
+        channelUrl: '/channel.html', // Channel File
+        status: true,
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: true  // parse XFBML
+    });
+};
 
-// // Load the SDK Asynchronously
-// (function (d) {
-//     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-//     if (d.getElementById(id)) { return; }
-//     js = d.createElement('script'); js.id = id; js.async = true;
-//     js.src = "//connect.facebook.net/en_US/all.js";
-//     ref.parentNode.insertBefore(js, ref);
-// } (document));
+// Load the SDK Asynchronously
+(function (d) {
+    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement('script'); js.id = id; js.async = true;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    ref.parentNode.insertBefore(js, ref);
+} (document));
 
 //=========================================================================================================================================
 // array containing all the questions. optionA is always the correct answer (i.e. evaluates true)
@@ -638,11 +638,7 @@ var renderHTML = {
             "&caption=" + facebookInfo.caption +
             "&description=" + facebookInfo.description +
             "&link=" + facebookInfo.link +
-            "&e2e=%7B%7D" +
             "&app_id=491627374259881" +
-            // "&redirect_uri=https://google.com/" +
-            "&locale=en_US" +
-            "&sdk=joey" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
@@ -751,23 +747,20 @@ var renderHTML = {
             "&caption=" + facebookInfo.caption +
             "&description=" + facebookInfo.description +
             "&link=" + facebookInfo.link +
-            "&e2e=%7B%7D" +
             "&app_id=491627374259881" +
-            "&redirect_uri=http://www.pandoradressagency.co.uk/" +
-            "&locale=en_US" +
-            "&sdk=joey" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
         var facebook_url2 = "https://www.facebook.com/dialog/feed?" +
             "app_id=145634995501895" +
-            "&display=popup&caption=An%20example%20caption" +
+            "&display=popup" +
+            "&caption=An%20example%20caption" +
             "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
             "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
         var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
-        var facebookWindowOpen = "window.open('" + facebook_url2 + "', '_blank', 'location=yes')";
+        var facebookWindowOpen = "window.open('" + facebook_url + "', '_blank', 'location=yes')";
         var twitterWindowOpen = "window.open('" + twitter_url + "', '_blank', 'location=yes')";
 
         var html =
