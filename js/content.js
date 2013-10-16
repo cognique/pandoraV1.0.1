@@ -779,7 +779,7 @@ var renderHTML = {
         };
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
-            "&app_id=491627374259881" +
+            "app_id=491627374259881" +
             "&display=popup" +
             "&caption=" + facebookInfo.caption +
             "&link=" + facebookInfo.link +
