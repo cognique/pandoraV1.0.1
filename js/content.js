@@ -733,14 +733,18 @@ var renderHTML = {
         $("div.container").css("overflow-y", "auto");
     },
 
-    renderScoreSharePage : function() {
+    openTwitterWindow : function() {
+        var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
+        window.open(twitter_url);
+    },
+
+    openFacebookWindow : function() {
         var facebookInfo = {
             name: 'Pandora Dress Agency',
             caption: 'The Game App',
             description: 'Description goes here...',
             link: 'http://www.pandoradressagency.co.uk/'
         };
-
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
             "&name=" + facebookInfo.name +
@@ -749,7 +753,27 @@ var renderHTML = {
             "&link=" + facebookInfo.link +
             "&app_id=491627374259881" +
             "&display=popup" +
-            "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
+            "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";      
+        window.open(facebook_url);
+    },
+
+    renderScoreSharePage : function() {
+        // var facebookInfo = {
+        //     name: 'Pandora Dress Agency',
+        //     caption: 'The Game App',
+        //     description: 'Description goes here...',
+        //     link: 'http://www.pandoradressagency.co.uk/'
+        // };
+
+        // var facebook_url = 
+        //     "https://www.facebook.com/dialog/feed?" +
+        //     "&name=" + facebookInfo.name +
+        //     "&caption=" + facebookInfo.caption +
+        //     "&description=" + facebookInfo.description +
+        //     "&link=" + facebookInfo.link +
+        //     "&app_id=491627374259881" +
+        //     "&display=popup" +
+        //     "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
         // var facebook_url2 = "https://www.facebook.com/dialog/feed?" +
         //     "app_id=145634995501895" +
@@ -758,16 +782,16 @@ var renderHTML = {
         //     "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
         //     "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
-        var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
+        // var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
-        var facebookWindowOpen = "window.open('" + facebook_url + "', 'location=yes, titlebar=yes')";
-        var twitterWindowOpen = "window.open('" + twitter_url + "', 'location=yes, titlebar=yes')";
+        // var facebookWindowOpen = "window.open('" + facebook_url + "', 'location=yes, titlebar=yes')";
+        // var twitterWindowOpen = "window.open('" + twitter_url + "', 'location=yes, titlebar=yes')";
 
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
-            '<a href="#" onclick="' + facebookWindowOpen + '" class="big-button skill-level">FACEBOOK</a>' +
-            '<a href="#" onclick="' + twitterWindowOpen + '" class="big-button skill-level">TWITTER</a>' +
+            '<a href="#" onclick="renderHTML.openFacebookWindow()" class="big-button skill-level">FACEBOOK</a>' +
+            '<a href="#" onclick="renderHTML.openTwitterWindow()" class="big-button skill-level">TWITTER</a>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
             '</div>' +
