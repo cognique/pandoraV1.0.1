@@ -760,16 +760,16 @@ var renderHTML = {
 
         var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
-        var facebookWindowOpen = "window.open('" + facebook_url + "', '_blank', 'location=yes')";
-        var twitterWindowOpen = "window.open('" + twitter_url + "', '_blank', 'location=yes')";
+        var facebookWindowOpen = "window.open('" + facebook_url + "', 'location=yes, titlebar=yes')";
+        var twitterWindowOpen = "window.open('" + twitter_url + "', 'location=yes, titlebar=yes')";
 
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
-            // '<a href="#" onclick="' + facebookWindowOpen + '" class="big-button skill-level">FACEBOOK</a>' +
-            // '<a href="#" onclick="' + twitterWindowOpen + '" class="big-button skill-level">TWITTER</a>' +
-            '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
-            '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
+            '<a href="#" onclick="' + facebookWindowOpen + '" class="big-button skill-level">FACEBOOK</a>' +
+            '<a href="#" onclick="' + twitterWindowOpen + '" class="big-button skill-level">TWITTER</a>' +
+            // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
+            // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
             '</div>' +
             '</section>';
         $('.container').html(html);
