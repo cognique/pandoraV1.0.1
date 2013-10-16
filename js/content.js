@@ -772,12 +772,7 @@ var renderHTML = {
             link: 'http://www.pandoradressagency.co.uk/'
         };
 
-        var facebook_url_sharer = 
-          "http://www.facebook.com/sharer.php?s=100" +
-          "&p[url]=http://www.pandoradressagency.co.uk/" +
-          "&p[images][0]=http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png" +
-          "&p[title]=Pandora Dress Agency" +
-          "&p[summary]=Description goes here...";
+        var facebook_url_sharer = "http://www.facebook.com/sharer.php?s=100&p[url]=http://www.pandoradressagency.co.uk/&p[images][0]=http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png&p[title]=Pandora Dress Agency&p[summary]=Description goes here...";
 
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
