@@ -671,22 +671,22 @@ var renderHTML = {
         }
     },
 
-    // setStatusWithFeedDialog : function() {
+    setStatusWithFeedDialog : function() {
 
-    //     var percentage = scoreCalculations.percentageScore();
-    //     var ranking = scoreCalculations.ranking();
+        var percentage = scoreCalculations.percentageScore();
+        var ranking = scoreCalculations.ranking();
 
-    //     FB.ui({
-    //         percentage : scoreCalculations.percentageScore(),
-    //         ranking : scoreCalculations.ranking(),
-    //         method: 'feed',
-    //         name: 'Pandora Dress Agency',
-    //         link: 'http://www.pandoradressagency.com/',
-    //         picture: 'http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png',
-    //         caption: 'Guess the brand app',
-    //         description: ranking + ': I scored ' + percentage + '% on the Pandora Dress Agency App'
-    //     });
-    // },
+        FB.ui({
+            percentage : scoreCalculations.percentageScore(),
+            ranking : scoreCalculations.ranking(),
+            method: 'feed',
+            name: 'Pandora Dress Agency',
+            link: 'http://www.pandoradressagency.com/',
+            picture: 'http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png',
+            caption: 'Guess the brand app',
+            description: ranking + ': I scored ' + percentage + '% on the Pandora Dress Agency App'
+        });
+    },
 
     renderMapPage : function() {
         var html =
@@ -739,7 +739,7 @@ var renderHTML = {
             "&caption=An%20example%20caption" +
             "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
             "&redirect_uri=https://developers.facebook.com/tools/explorer";
-            
+
         var facebookInfo = {
             name: 'Pandora Dress Agency',
             caption: 'The Game App',
@@ -791,7 +791,7 @@ var renderHTML = {
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
-            '<a href="#" onclick="(renderHTML.inAppBrowserFunction())" class="big-button skill-level">FACEBOOK</a>' +
+            '<a href="#" onclick="renderHTML.setStatusWithFeedDialog();" class="big-button skill-level">FACEBOOK</a>' +
             '<a href="#" onclick="window.open(\'https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game\', \'_blank\', \'location=no, menubar=no, resizable=no, scrollbars=no, status=no, titlebar=no, toolbar=no\')" class="big-button skill-level">TWITTER</a>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
