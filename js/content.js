@@ -751,12 +751,12 @@ var renderHTML = {
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
-        var facebook_url2 = "https://www.facebook.com/dialog/feed?" +
-            "app_id=145634995501895" +
-            "&display=popup" +
-            "&caption=An%20example%20caption" +
-            "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
-            "&redirect_uri=https://developers.facebook.com/tools/explorer";
+        // var facebook_url2 = "https://www.facebook.com/dialog/feed?" +
+        //     "app_id=145634995501895" +
+        //     "&display=popup" +
+        //     "&caption=An%20example%20caption" +
+        //     "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
+        //     "&redirect_uri=https://developers.facebook.com/tools/explorer";
 
         var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
@@ -766,8 +766,10 @@ var renderHTML = {
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
-            '<a href="#" onclick="' + facebookWindowOpen + '" class="big-button skill-level">FACEBOOK</a>' +
-            '<a href="#" onclick="' + twitterWindowOpen + '" class="big-button skill-level">TWITTER</a>' +
+            // '<a href="#" onclick="' + facebookWindowOpen + '" class="big-button skill-level">FACEBOOK</a>' +
+            // '<a href="#" onclick="' + twitterWindowOpen + '" class="big-button skill-level">TWITTER</a>' +
+            '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
+            '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
             '</div>' +
             '</section>';
         $('.container').html(html);
