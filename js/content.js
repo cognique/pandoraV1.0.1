@@ -777,9 +777,9 @@ var renderHTML = {
             "&display=popup" +
             //"&caption=An%20example%20caption" +
 
-            "&caption=" + facebookInfo.caption +
-            "&description=" + facebookInfo.description +
-            "&name=" + facebookInfo.name +  
+            "&caption=123123" +
+            "&description=testtest" + 
+            "&name=456456" +  
 
             "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
             "&redirect_uri=https://developers.facebook.com/tools/explorer";
