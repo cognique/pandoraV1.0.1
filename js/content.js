@@ -780,9 +780,9 @@ var renderHTML = {
             "&caption=The%20Game%20App" +
             "&description=Description%20goes%20here" + 
             "&name=Pandora%20Dress%20Agency" +  
-            "&link=http%3A%2F%2Fwww.pandoradressagency.co.uk%2F" +
-            
-            "&redirect_uri=https://developers.facebook.com/tools/explorer";
+            "&link=http%3A%2F%2Fwww.pandoradressagency.co.uk%2F";
+
+            //"&redirect_uri=https://developers.facebook.com/tools/explorer";
 
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
