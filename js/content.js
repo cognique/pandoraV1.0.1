@@ -633,9 +633,9 @@ var renderHTML = {
         // };
 
         var facebookInfo = {
-            name: 'PandoraDressAgency',
-            caption: 'TheGameApp',
-            description: 'I%20scored%20'+ percentage + '%25%20on%20' + ranking + '%20level',
+            name: 'Pandora%20Dress%20Agency',
+            caption: 'The%20Game%20App',
+            description: ranking + '%3A%20I%20scored%20'+ percentage + '%25%20on%20' + level + '%20level',
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
@@ -780,9 +780,9 @@ var renderHTML = {
     childBrowserFunctionFACE : function() {
 
         var facebookInfo = {
-            name: 'PandoraDressAgency',
-            caption: 'TheGameApp',
-            description: 'Descriptiongoeshere...',
+            name: 'Pandora%20Dress%20Agency',
+            caption: 'The%20Game%20App',
+            description: 'Description%20goes%20here...',
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
