@@ -635,10 +635,10 @@ var renderHTML = {
         var facebookInfo = {
             name: 'PandoraDressAgency',
             caption: 'TheGameApp',
-            description: 'Descriptiongoeshere...',
+            description: ranking + percentage,
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
-        
+
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
             "&name=" + facebookInfo.name +
