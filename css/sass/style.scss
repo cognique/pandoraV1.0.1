@@ -64,7 +64,7 @@ a {
     display: none; 
 }
 div.container {
-    height: 460px;
+    height: 440px;
     width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -91,9 +91,8 @@ $pink: #eb008b;
 div.page {
     float: left;
     width: 100%;
-    padding-bottom: 18px;
     background-color: #000;
-    min-height: 550px;
+    height: 480px;
     overflow: hidden;
     position: absolute;
     top: 50%;
@@ -111,8 +110,7 @@ header {
     float: left;
     clear: both;
     text-align: center;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 20px 0;
     img {
         max-width: 100%;
         height: auto;
@@ -184,15 +182,16 @@ a.small-button.disable {
 div.game-image {
     width: 260px;
     height: 260px;
-    background: url(../../img/game-image.png);
+    background: url(../../img/game-image.png) center left no-repeat;
     margin-bottom: 10px;
+    background-size: cover;
 }
 
 // =========================Skill Level Page=========================
 
 section.skill-level-page {
     div.content.skill-level {
-        margin-top: 152px;
+        margin-top: 50%;
     }
 
     a.big-button.skill-level {
@@ -205,7 +204,7 @@ section.skill-level-page {
 
 section.levels-page {
     div.content.levels {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     a.small-button.levels {
@@ -220,11 +219,11 @@ section.levels-page {
 
 section.question-page {
     div.title {
-        margin: 40px 0 13px 0;
+        margin: 15px 0;
         text-align: center;
     }
     div.image.question {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     a.option {
@@ -256,7 +255,7 @@ section.question-page {
     }
     div.navigation-container {
         width: 260px;
-        height: 100px;
+        margin-top: 20px;
         clear: both;
         margin-left: auto;
         margin-right: auto;        
@@ -268,7 +267,6 @@ section.question-page {
         height: 30px;
         text-align: center;
         line-height: 30px;
-        margin-top: 20px;
         &:hover {
             background-position: top;
         }
@@ -300,8 +298,7 @@ section.question-page {
         width: 76px;
         height: 30px;
         text-align: center;
-        line-height: 30px;
-        margin-top: 20px;    
+        line-height: 30px;   
     } 
 }
 
@@ -322,7 +319,6 @@ section.score-page {
     }
     .score {
         text-align: center;
-        margin-top: 40px;
         p {
             margin-bottom: 23px;
         }
@@ -389,12 +385,7 @@ section.buying-selling {
 
 
 footer {
-    height: 90px;
-    padding-top: 32px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    height: 40px;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #000;
