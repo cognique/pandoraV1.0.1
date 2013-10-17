@@ -606,7 +606,7 @@ var renderHTML = {
 
     },  
 
-    renderScorePage : function() {
+    childBrowserFunctionFACEScore : function() {
 
         var percentage = scoreCalculations.percentageScore();
         var ranking = scoreCalculations.ranking();
@@ -626,10 +626,10 @@ var renderHTML = {
         }
 
         var facebookInfo = {
-            name: 'Pandora Dress Agency',
-            caption: 'The Game App',
-            description: ranking + ': I scored ' + percentage + '% on ' + level + ' Level',
-            link: 'http://www.pandoradressagency.co.uk/'
+            name: 'PandoraDressAgency',
+            caption: 'TheGameApp',
+            description: ranking + ':Iscored' + percentage + '%on' + level + 'Level',
+            link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
         var facebook_url = 
@@ -641,6 +641,45 @@ var renderHTML = {
             "&app_id=491627374259881" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
+      
+      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });      
+    },
+
+    renderScorePage : function() {
+
+        var percentage = scoreCalculations.percentageScore();
+        var ranking = scoreCalculations.ranking();
+
+        switch (true) {
+            case (levelAccessNumber <= 20):
+                var level = 'Beginner';
+                break;
+
+            case ((levelAccessNumber >= 21) && (levelAccessNumber <= 40)):
+                var level = 'Intermediate';
+                break;
+
+            case ((levelAccessNumber >= 41) && (levelAccessNumber <= 60)):
+                var level = 'Expert';
+                break;
+        }
+
+        // var facebookInfo = {
+        //     name: 'Pandora Dress Agency',
+        //     caption: 'The Game App',
+        //     description: ranking + ': I scored ' + percentage + '% on ' + level + ' Level',
+        //     link: 'http://www.pandoradressagency.co.uk/'
+        // };
+
+        // var facebook_url = 
+        //     "https://www.facebook.com/dialog/feed?" +
+        //     "&name=" + facebookInfo.name +
+        //     "&caption=" + facebookInfo.caption +
+        //     "&description=" + facebookInfo.description +
+        //     "&link=" + facebookInfo.link +
+        //     "&app_id=491627374259881" +
+        //     "&display=popup" +
+        //     "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
         var html =
             '<section class="score-page">' +
@@ -660,7 +699,7 @@ var renderHTML = {
             '<div class="score-button-wrapper">' +
             '<a onclick="renderHTML.renderSkillLevelPage()" class="big-button score-page next-round" href="#">NEXT ROUND</a>' +
             '<a onclick="renderHTML.renderHomePage(); scoreCalculations.resetEverything()" class="big-button score-page" href="#">START AGAIN</a>' +
-            '<a class="big-button score-page" href="' + facebook_url + '" target="_blank">SHARE</a>' +
+            '<a class="big-button score-page" href="#" onclick="renderHTML.childBrowserFunctionFACEScore()">SHARE</a>' +
             // '<a class="big-button score-page" href="javascript:{}" onclick="renderHTML.setStatusWithFeedDialog();">SHARE</a>' +
             '</div>' +
             '</section>';
@@ -671,22 +710,22 @@ var renderHTML = {
         }
     },
 
-    setStatusWithFeedDialog : function() {
+    // setStatusWithFeedDialog : function() {
 
-        var percentage = scoreCalculations.percentageScore();
-        var ranking = scoreCalculations.ranking();
+    //     var percentage = scoreCalculations.percentageScore();
+    //     var ranking = scoreCalculations.ranking();
 
-        FB.ui({
-            percentage : scoreCalculations.percentageScore(),
-            ranking : scoreCalculations.ranking(),
-            method: 'feed',
-            name: 'Pandora Dress Agency',
-            link: 'http://www.pandoradressagency.com/',
-            picture: 'http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png',
-            caption: 'Guess the brand app',
-            description: ranking + ': I scored ' + percentage + '% on the Pandora Dress Agency App'
-        });
-    },
+    //     FB.ui({
+    //         percentage : scoreCalculations.percentageScore(),
+    //         ranking : scoreCalculations.ranking(),
+    //         method: 'feed',
+    //         name: 'Pandora Dress Agency',
+    //         link: 'http://www.pandoradressagency.com/',
+    //         picture: 'http://www.pandoradressagency.com/wp-content/themes/pand01/images/logo.png',
+    //         caption: 'Guess the brand app',
+    //         description: ranking + ': I scored ' + percentage + '% on the Pandora Dress Agency App'
+    //     });
+    // },
 
     renderMapPage : function() {
         var html =
@@ -730,38 +769,6 @@ var renderHTML = {
         $('.container').html(html);
         $("div.container").css("overflow-y", "auto");
     },
-
-    // inAppBrowserFunction : function() {
-
-    //     var facebook_standard = "https://www.facebook.com/dialog/feed?" +
-    //         "app_id=145634995501895" +
-    //         "&display=popup" +
-    //         "&caption=An%20example%20caption" +
-    //         "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
-    //         "&redirect_uri=https://developers.facebook.com/tools/explorer";
-
-    //     var facebookInfo = {
-    //         name: 'Pandora Dress Agency',
-    //         caption: 'The Game App',
-    //         description: 'Description goes here...',
-    //         link: 'http://www.pandoradressagency.co.uk/'
-    //     };
-
-    //     var facebook_url = 
-    //         "https://www.facebook.com/dialog/feed?" +
-    //         "&name=" + facebookInfo.name +
-    //         "&caption=" + facebookInfo.caption +
-    //         "&description=" + facebookInfo.description +
-    //         "&link=" + facebookInfo.link +
-    //         "&app_id=491627374259881" +
-    //         "&display=popup" +
-    //         "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-
-    //   var ref = window.open(facebook_standard, '_blank', 'location=yes');
-    //   ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
-    //   ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-    //   ref.addEventListener('exit', function() { alert(event.type); });
-    // },
 
     childBrowserFunctionFACE : function() {
 
