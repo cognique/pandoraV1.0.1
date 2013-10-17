@@ -625,13 +625,20 @@ var renderHTML = {
                 break;
         }
 
+        // var facebookInfo = {
+        //     name: 'PandoraDressAgency',
+        //     caption: 'TheGameApp',
+        //     description: ranking + ':Iscored' + percentage + '%on' + level + 'Level',
+        //     link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
+        // };
+
         var facebookInfo = {
             name: 'PandoraDressAgency',
             caption: 'TheGameApp',
-            description: ranking + ':Iscored' + percentage + '%on' + level + 'Level',
+            description: 'Descriptiongoeshere...',
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
-
+        
         var facebook_url = 
             "https://www.facebook.com/dialog/feed?" +
             "&name=" + facebookInfo.name +
