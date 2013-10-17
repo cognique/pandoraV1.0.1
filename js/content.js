@@ -632,15 +632,15 @@ var renderHTML = {
             link: 'http://www.pandoradressagency.co.uk/'
         };
 
-        var facebook_url = 
-            "https://www.facebook.com/dialog/feed?" +
-            "&name=" + facebookInfo.name +
-            "&caption=" + facebookInfo.caption +
-            "&description=" + facebookInfo.description +
-            "&link=" + facebookInfo.link +
-            "&app_id=491627374259881" +
-            "&display=popup" +
-            "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
+        // var facebook_url = 
+        //     "https://www.facebook.com/dialog/feed?" +
+        //     "&name=" + facebookInfo.name +
+        //     "&caption=" + facebookInfo.caption +
+        //     "&description=" + facebookInfo.description +
+        //     "&link=" + facebookInfo.link +
+        //     "&app_id=491627374259881" +
+        //     "&display=popup" +
+        //     "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
         var html =
             '<section class="score-page">' +
@@ -660,7 +660,7 @@ var renderHTML = {
             '<div class="score-button-wrapper">' +
             '<a onclick="renderHTML.renderSkillLevelPage()" class="big-button score-page next-round" href="#">NEXT ROUND</a>' +
             '<a onclick="renderHTML.renderHomePage(); scoreCalculations.resetEverything()" class="big-button score-page" href="#">START AGAIN</a>' +
-            '<a class="big-button score-page" href="' + facebook_url + '" target="_blank">SHARE</a>' +
+            '<a class="big-button score-page" href="#" onclick="socialMediaWindows.scoreShareFacebook()">SHARE</a>' +
             // '<a class="big-button score-page" href="javascript:{}" onclick="renderHTML.setStatusWithFeedDialog();">SHARE</a>' +
             '</div>' +
             '</section>';
@@ -731,65 +731,6 @@ var renderHTML = {
         $("div.container").css("overflow-y", "auto");
     },
 
-    // inAppBrowserFunction : function() {
-
-    //     var facebook_standard = "https://www.facebook.com/dialog/feed?" +
-    //         "app_id=145634995501895" +
-    //         "&display=popup" +
-    //         "&caption=An%20example%20caption" +
-    //         "&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F" +
-    //         "&redirect_uri=https://developers.facebook.com/tools/explorer";
-
-    //     var facebookInfo = {
-    //         name: 'Pandora Dress Agency',
-    //         caption: 'The Game App',
-    //         description: 'Description goes here...',
-    //         link: 'http://www.pandoradressagency.co.uk/'
-    //     };
-
-    //     var facebook_url = 
-    //         "https://www.facebook.com/dialog/feed?" +
-    //         "&name=" + facebookInfo.name +
-    //         "&caption=" + facebookInfo.caption +
-    //         "&description=" + facebookInfo.description +
-    //         "&link=" + facebookInfo.link +
-    //         "&app_id=491627374259881" +
-    //         "&display=popup" +
-    //         "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-
-    //   var ref = window.open(facebook_standard, '_blank', 'location=yes');
-    //   ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
-    //   ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-    //   ref.addEventListener('exit', function() { alert(event.type); });
-    // },
-
-    childBrowserFunctionFACE : function() {
-
-        var facebookInfo = {
-            name: 'PandoraDressAgency',
-            caption: 'TheGameApp',
-            description: 'Descriptiongoeshere...',
-            link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
-        };
-
-        var facebook_url = 
-            "https://www.facebook.com/dialog/feed?" +
-            "&name=" + facebookInfo.name +
-            "&caption=" + facebookInfo.caption +
-            "&description=" + facebookInfo.description +
-            "&link=" + facebookInfo.link +
-            "&app_id=491627374259881" +
-            "&display=popup" +
-            "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-      
-      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });      
-    },
-
-    childBrowserFunctionTWIT : function() {
-      var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
-      window.plugins.childBrowser.showWebPage(twitter_url, { showLocationBar: true });
-    },
-
     renderScoreSharePage : function() {
         // var facebookInfo = {
         //     name: 'Pandora Dress Agency',
@@ -820,8 +761,8 @@ var renderHTML = {
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
-            '<a href="#" onclick="renderHTML.childBrowserFunctionFACE()" class="big-button skill-level">FACEBOOK</a>' +
-            '<a href="#" onclick="renderHTML.childBrowserFunctionTWIT()" class="big-button skill-level">TWITTER</a>' +
+            '<a href="#" onclick="socialMediaWindows.standardShareFacebook()" class="big-button skill-level">FACEBOOK</a>' +
+            '<a href="#" onclick="socialMediaWindows.standardShareTwitter()" class="big-button skill-level">TWITTER</a>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
             '</div>' +
@@ -830,6 +771,77 @@ var renderHTML = {
     }
 
 };
+
+//=========================================================================================================================================
+// render social media windows
+
+var socialMediaWindows = {
+    standardShareFacebook : function() {
+
+        var facebookInfo = {
+            name: 'PandoraDressAgency',
+            caption: 'TheGameApp',
+            description: 'Descriptiongoeshere...',
+            link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
+        };
+
+        var facebook_url = 
+            "https://www.facebook.com/dialog/feed?" +
+            "&name=" + facebookInfo.name +
+            "&caption=" + facebookInfo.caption +
+            "&description=" + facebookInfo.description +
+            "&link=" + facebookInfo.link +
+            "&app_id=491627374259881" +
+            "&display=popup" +
+            "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
+      
+      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });      
+    },
+
+    scoreShareFacebook : function() {
+        var percentage = scoreCalculations.percentageScore();
+        var ranking = scoreCalculations.ranking();
+
+        switch (true) {
+            case (levelAccessNumber <= 20):
+                var level = 'Beginner';
+                break;
+
+            case ((levelAccessNumber >= 21) && (levelAccessNumber <= 40)):
+                var level = 'Intermediate';
+                break;
+
+            case ((levelAccessNumber >= 41) && (levelAccessNumber <= 60)):
+                var level = 'Expert';
+                break;
+        }
+
+        var facebookInfo = {
+            name: 'Pandora Dress Agency',
+            caption: 'The Game App',
+            description: ranking + ': I scored ' + percentage + '% on ' + level + ' Level',
+            link: 'http://www.pandoradressagency.co.uk/'
+        };
+
+        var facebook_url = 
+            "https://www.facebook.com/dialog/feed?" +
+            "&name=" + facebookInfo.name +
+            "&caption=" + facebookInfo.caption +
+            "&description=" + facebookInfo.description +
+            "&link=" + facebookInfo.link +
+            "&app_id=491627374259881" +
+            "&display=popup" +
+            "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
+        
+        window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });
+     },
+
+    standardShareTwitter : function() {
+      var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
+      window.plugins.childBrowser.showWebPage(twitter_url, { showLocationBar: true });
+    }
+};
+
 
 //=========================================================================================================================================
 // check scores and disable levels accordingly
