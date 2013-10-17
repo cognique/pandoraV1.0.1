@@ -352,7 +352,7 @@ var renderHTML = {
         var html =
             '<section class="home-page">' +
             '<header>' +
-            '<img src="img/logo.png" alt="">' +
+            '<img src="img/pandora-logo.svg" alt="">' +
             '</header>' +
             '<div class="content homepage">' +
             '<div class="game-image"></div>' +
