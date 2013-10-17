@@ -11,24 +11,24 @@ var levelAccessNumber = 0;
 //=========================================================================================================================================
 // facebook API
 
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '491627374259881', // App ID
-        channelUrl: 'http://pamela.cognique.co.uk/channel.html', // Channel File
-        status: true,
-        cookie: true, // enable cookies to allow the server to access the session
-        xfbml: true  // parse XFBML
-    });
-};
+// window.fbAsyncInit = function () {
+//     FB.init({
+//         appId: '491627374259881', // App ID
+//         channelUrl: 'http://pamela.cognique.co.uk/channel.html', // Channel File
+//         status: true,
+//         cookie: true, // enable cookies to allow the server to access the session
+//         xfbml: true  // parse XFBML
+//     });
+// };
 
-// Load the SDK Asynchronously
-(function (d) {
-    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-    if (d.getElementById(id)) { return; }
-    js = d.createElement('script'); js.id = id; js.async = true;
-    js.src = "//connect.facebook.net/en_US/all.js";
-    ref.parentNode.insertBefore(js, ref);
-} (document));
+// // Load the SDK Asynchronously
+// (function (d) {
+//     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+//     if (d.getElementById(id)) { return; }
+//     js = d.createElement('script'); js.id = id; js.async = true;
+//     js.src = "//connect.facebook.net/en_US/all.js";
+//     ref.parentNode.insertBefore(js, ref);
+// } (document));
 
 //=========================================================================================================================================
 // array containing all the questions. optionA is always the correct answer (i.e. evaluates true)
@@ -735,12 +735,14 @@ var renderHTML = {
     // },
 
     renderMapPage : function() {
+
         var html =
-            '<section class="map">' +
+            '<section id="map" class="map">' +
             '<header>' +
             '<img src="img/logo.png" alt="">' +
             '</header>' +
-            '<iframe width="256" height="203" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?q=SW7+1ES&amp;ie=UTF8&amp;hq=&amp;hnear=London+SW7+1ES,+United+Kingdom&amp;gl=uk&amp;ll=51.498929,-0.166554&amp;spn=0.012276,0.033023&amp;t=m&amp;z=14&amp;output=embed"></iframe>' +
+            '<div style="width: 256px; height: 203px; margin-bottom: 5px;" id="map-canvas"></div>' +
+            // '<iframe width="256" height="203" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?q=SW7+1ES&amp;ie=UTF8&amp;hq=&amp;hnear=London+SW7+1ES,+United+Kingdom&amp;gl=uk&amp;ll=51.498929,-0.166554&amp;spn=0.012276,0.033023&amp;t=m&amp;z=14&amp;output=embed"></iframe>' +
             '<a href="//www.pandoradressagency.com" target="_blank">www.pandoradressagency.com</a>' +
             '<ul>' +
             '<li>10.00am to 7.00pm - Monday to Saturday</li>' +
@@ -756,6 +758,14 @@ var renderHTML = {
             '</section>';
         $('.container').html(html);
         $("div.container").css("overflow-y", "auto");
+
+        var map;
+        var mapOptions = {
+            zoom: 14,
+            center: new google.maps.LatLng(51.498929,-0.166554),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);        
     },
 
     renderBuyingSellingPage : function() {

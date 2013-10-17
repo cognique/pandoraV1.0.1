@@ -64,7 +64,7 @@ a {
   display: none; }
 
 div.container {
-  height: 440px;
+  height: 420px;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -311,7 +311,7 @@ section.buying-selling p {
   margin-top: 10px; }
 
 footer {
-  height: 40px;
+  height: 60px;
   padding-left: 30px;
   padding-right: 30px;
   background-color: #000; }
@@ -326,6 +326,7 @@ a.icon {
   height: 40px;
   border-radius: 20px;
   float: left;
+  margin-top: 20px;
   background-position: bottom; }
   a.icon:hover {
     background-position: top; }
