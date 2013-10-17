@@ -635,7 +635,7 @@ var renderHTML = {
         var facebookInfo = {
             name: 'PandoraDressAgency',
             caption: 'TheGameApp',
-            description: ranking + percentage,
+            description: 'I%20scored%20'+ percentage + '%25%20on%20' + ranking + '%20level',
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
