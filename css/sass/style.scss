@@ -306,6 +306,7 @@ section.question-page {
 // =========================Score Page=========================
 
 section.score-page {
+    padding-top: 20px;
     div.score-button-wrapper {
         width: 260px;
         margin-left: auto;
@@ -324,12 +325,13 @@ section.score-page {
         }
         span {
             font-size: 5.71428571429em;
-            font-family: 'BodoniMTRegular';            
+            font-family: 'BodoniMTRegular';
+            line-height: 0.75em;           
         }
     }
     .ranking {
         text-align: center;
-        margin: 40px 0 40px 0;
+        margin: 40px 0 33px 0;
         p {
             margin-bottom: 17px;
         }    
@@ -400,7 +402,7 @@ a.icon {
     height: 40px;
     border-radius: 20px;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     background-position: bottom;
     &:hover {
         background-position: top;

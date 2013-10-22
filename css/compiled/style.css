@@ -261,29 +261,32 @@ section.question-page div.pagination {
   text-align: center;
   line-height: 30px; }
 
-section.score-page div.score-button-wrapper {
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto; }
-section.score-page a.big-button.score-page {
-  margin-bottom: 15px; }
-section.score-page span {
-  color: #eb008b; }
-section.score-page .score {
-  text-align: center; }
-  section.score-page .score p {
-    margin-bottom: 23px; }
-  section.score-page .score span {
-    font-size: 5.71428571429em;
-    font-family: 'BodoniMTRegular'; }
-section.score-page .ranking {
-  text-align: center;
-  margin: 40px 0 40px 0; }
-  section.score-page .ranking p {
-    margin-bottom: 17px; }
-  section.score-page .ranking span {
-    font-size: 1.28571428571em;
-    font-family: 'BodoniMTRegular'; }
+section.score-page {
+  padding-top: 20px; }
+  section.score-page div.score-button-wrapper {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto; }
+  section.score-page a.big-button.score-page {
+    margin-bottom: 15px; }
+  section.score-page span {
+    color: #eb008b; }
+  section.score-page .score {
+    text-align: center; }
+    section.score-page .score p {
+      margin-bottom: 23px; }
+    section.score-page .score span {
+      font-size: 5.71428571429em;
+      font-family: 'BodoniMTRegular';
+      line-height: 0.75em; }
+  section.score-page .ranking {
+    text-align: center;
+    margin: 40px 0 33px 0; }
+    section.score-page .ranking p {
+      margin-bottom: 17px; }
+    section.score-page .ranking span {
+      font-size: 1.28571428571em;
+      font-family: 'BodoniMTRegular'; }
 
 section.map iframe {
   margin-bottom: 5px;
@@ -326,7 +329,7 @@ a.icon {
   height: 40px;
   border-radius: 20px;
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
   background-position: bottom; }
   a.icon:hover {
     background-position: top; }
