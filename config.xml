@@ -23,9 +23,4 @@
 
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
 
-    <gap:plugin name="com.phonegap.plugins.facebookconnect">
-        <param name="APP_ID" value="491627374259881" />
-        <param name="APP_NAME" value="Pandora" />
-    </gap:plugin>
-
 </widget>
