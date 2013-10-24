@@ -18,9 +18,9 @@
     </author>
 
     <preference name="orientation" value="portrait" />
+    <preference name="phonegap-version" value="2.5.0" />
 
     <gap:platform name="ios" />
-
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
 
 </widget>
