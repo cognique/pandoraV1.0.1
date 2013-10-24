@@ -304,6 +304,9 @@ section.map ul {
   float: left; }
   section.map ul li {
     margin-bottom: 3px; }
+    section.map ul li span.telephone {
+      float: left;
+      margin-right: 5px; }
 
 section.buying-selling span {
   color: #eb008b; }

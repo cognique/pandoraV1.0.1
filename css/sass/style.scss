@@ -367,6 +367,10 @@ section.map {
         float: left;
         li {
             margin-bottom: 3px;
+            span.telephone {
+                float: left;
+                margin-right: 5px;
+            }
         }
     }
 }

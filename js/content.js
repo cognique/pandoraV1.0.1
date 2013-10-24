@@ -196,7 +196,7 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
 
     { "optionA" : "Jimmy Choo",              // Series of questions - #32
       "optionB" : "Jenny packham",
-      "optionC" : "Loew",
+      "optionC" : "Loewe",
       "image"   : "intermediate/Jimmy-Choo-1" },
 
     { "optionA" : "YSL",            // Series of questions - #33
@@ -230,7 +230,7 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
       "image"   : "intermediate/Isabel-Marant-1" },
 
     { "optionA" : "Dolce and Gabbana",        // Series of questions - #39
-      "optionB" : "Loew",
+      "optionB" : "Loewe",
       "optionC" : "Lanvin",
       "image"   : "intermediate/Dolce-and-Gabbana-2" },
 
@@ -273,7 +273,7 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
 
     { "optionA" : "Ferragamo",        // Series of questions - #47
       "optionB" : "Jean Paul Gaultier",
-      "optionC" : "Loew",
+      "optionC" : "Loewe",
       "image"   : "expert/Ferragamo-1" },
 
     { "optionA" : "Anya Hindmarch",        // Series of questions - #48
@@ -753,7 +753,7 @@ var renderHTML = {
             '<li>Knightsbridge</li>' +
             '<li>London SW7 1ES</li>' +
             '<li>&nbsp;</li>' +
-            '<li>Tel: 0207 589 5289</li>' +
+            '<li><span class="telephone">Tel:</span>0207 589 5289</li>' +
             '</ul>' +
             '</section>';
         $('.container').html(html);
