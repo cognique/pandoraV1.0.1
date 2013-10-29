@@ -634,7 +634,7 @@ var renderHTML = {
 
         var facebookInfo = {
             name: 'Pandora%20Dress%20Agency',
-            caption: 'The%20Game%20App',
+            caption: 'The%20Designer%20Label%20Game',
             description: ranking + '%3A%20I%20scored%20'+ percentage + '%25%20on%20' + level + '%20level',
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
@@ -810,8 +810,8 @@ var renderHTML = {
 
         var facebookInfo = {
             name: 'Pandora%20Dress%20Agency',
-            caption: 'The%20Game%20App',
-            description: 'Description%20goes%20here...',
+            caption: 'The%20Designer%20Label%20Game',
+            description: 'Available%20in%20the%20App%20Store%20and%20Google%20Play',
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
@@ -829,7 +829,7 @@ var renderHTML = {
     },
 
     childBrowserFunctionTWIT : function() {
-      var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
+      var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Designer%20Label%20Game";
       window.plugins.childBrowser.showWebPage(twitter_url, { showLocationBar: true });
     },
 

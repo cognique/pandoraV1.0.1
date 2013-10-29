@@ -82,9 +82,7 @@ div.page {
   background-color: #000;
   height: 480px;
   overflow: hidden;
-  position: absolute;
-  top: 50%;
-  margin-top: -240px; }
+  position: absolute; }
 
 section {
   font-size: 1.4em;
