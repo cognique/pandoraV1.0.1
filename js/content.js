@@ -704,6 +704,7 @@ var renderHTML = {
             '</span>' +
             '</div>' +
             '<div class="score-button-wrapper">' +
+            '<a href="#" onclick="renderHTML.childBrowserGameAnswers()" class="click-answers">Click here for the answers</a>' +
             '<a onclick="renderHTML.renderSkillLevelPage()" class="big-button score-page next-round" href="#">NEXT ROUND</a>' +
             '<a onclick="renderHTML.renderHomePage(); scoreCalculations.resetEverything()" class="big-button score-page" href="#">START AGAIN</a>' +
             '<a class="big-button score-page" href="#" onclick="renderHTML.childBrowserFunctionFACEScore()">SHARE</a>' +
@@ -715,6 +716,24 @@ var renderHTML = {
         if (levelAccessNumber > 59) {
             $('a.big-button.score-page.next-round').addClass('disable');
         }
+    },
+
+    childBrowserGameAnswers : function() {
+        switch (true) {
+            case (levelAccessNumber <= 20):
+                var level = 'beginner';
+                break;
+
+            case ((levelAccessNumber >= 21) && (levelAccessNumber <= 40)):
+                var level = 'intermediate';
+                break;
+
+            case ((levelAccessNumber >= 41) && (levelAccessNumber <= 60)):
+                var level = 'expert';
+                break;
+        }      
+      //window.open("http://www.pandoradressagency.com/the-designer-label-game-answers/" + level + "/");
+      window.plugins.childBrowser.showWebPage("http://www.pandoradressagency.com/the-designer-label-game-answers/" + level + "/", { showLocationBar: true });      
     },
 
     // setStatusWithFeedDialog : function() {

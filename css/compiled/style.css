@@ -265,8 +265,12 @@ section.score-page {
   padding-top: 20px; }
   section.score-page div.score-button-wrapper {
     width: 260px;
-    margin-left: auto;
-    margin-right: auto; }
+    text-align: center;
+    margin: 0 auto; }
+    section.score-page div.score-button-wrapper a.click-answers {
+      margin: 0 auto 20px auto;
+      display: inline-block;
+      font-weight: normal; }
   section.score-page a.big-button.score-page {
     margin-bottom: 15px; }
   section.score-page span {
@@ -281,9 +285,9 @@ section.score-page {
       line-height: 0.75em; }
   section.score-page .ranking {
     text-align: center;
-    margin: 40px 0 33px 0; }
+    margin: 20px 0; }
     section.score-page .ranking p {
-      margin-bottom: 17px; }
+      margin-bottom: 10px; }
     section.score-page .ranking span {
       font-size: 1.28571428571em;
       font-family: 'BodoniMTRegular'; }
