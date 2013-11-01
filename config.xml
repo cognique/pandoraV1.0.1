@@ -21,6 +21,8 @@
     <preference name="webviewbounce" value="false" />
 
     <gap:platform name="ios" />
+    <gap:platform name="android" />
+    
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
 
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
