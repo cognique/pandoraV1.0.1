@@ -19,6 +19,7 @@
 
     <preference name="orientation" value="portrait" />
     <preference name="webviewbounce" value="false" />
+    <preference name="EnableViewportScale" value="true" />
 
     <gap:platform name="ios" />
     <gap:platform name="android" />
