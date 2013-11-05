@@ -10,7 +10,7 @@
     <name>Pandora Dress Agency App</name>
 
     <description>
-        A Designer Label Game 
+        A Designer Label Game
     </description>
 
     <author href="https://cognique.co.uk" email="apps@cognique.co.uk">
@@ -19,10 +19,11 @@
 
     <preference name="orientation" value="portrait" />
     <preference name="webviewbounce" value="false" />
+    <preference name="EnableViewportScale" value="true" />
 
     <gap:platform name="ios" />
     <gap:platform name="android" />
-    
+
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
 
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
