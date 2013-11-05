@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -56,12 +56,12 @@ table {
 a {
     text-decoration: none;
     color: #FFF;
-    text-shadow: 0px -1px 0px #000; 
+    text-shadow: 0px -1px 0px #000;
     font-weight: bold;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 div.container {
     height: 420px;
@@ -96,7 +96,7 @@ div.page {
     overflow: hidden;
     position: absolute;
     // top: 50%;
-    // margin-top: -240px;  
+    // margin-top: -240px;
 }
 
 section {
@@ -121,8 +121,8 @@ div.content {
     // width: 100%;
     // float: left;
     margin-left: auto;
-    margin-right: auto;    
-    width: 260px;    
+    margin-right: auto;
+    width: 260px;
     clear: both;
     color: #FFF;
     // overflow-x: auto;
@@ -131,7 +131,7 @@ div.content {
 a.big-button {
     display: block;
     color: #FFF;
-    background: url(../../img/big-button.svg) bottom; 
+    background: url(../../img/big-button.svg) bottom;
     width: 260px;
     height: 42px;
     line-height: 42px;
@@ -144,7 +144,7 @@ a.big-button {
 a.small-button {
     display: block;
     color: #FFF;
-    background: url(../../img/small-button.svg) bottom; 
+    background: url(../../img/small-button.svg) bottom;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -241,7 +241,7 @@ section.question-page {
         width: 260px;
         margin-left: auto;
         margin-right: auto;
-        clear: both;        
+        clear: both;
             &:hover {
             background-color: #FFF;
             color: #000;
@@ -258,7 +258,7 @@ section.question-page {
         margin-top: 20px;
         clear: both;
         margin-left: auto;
-        margin-right: auto;        
+        margin-right: auto;
     }
     @mixin back-next {
         display: block;
@@ -292,14 +292,14 @@ section.question-page {
         color: #959595;
         cursor: default;
         pointer-events: none;
-    }    
+    }
     div.pagination {
         float: left;
         width: 76px;
         height: 30px;
         text-align: center;
-        line-height: 30px;   
-    } 
+        line-height: 30px;
+    }
 }
 
 
@@ -331,7 +331,7 @@ section.score-page {
         span {
             font-size: 5.71428571429em;
             font-family: 'BodoniMTRegular';
-            line-height: 0.75em;           
+            line-height: 0.75em;
         }
     }
     .ranking {
@@ -339,10 +339,10 @@ section.score-page {
         margin: 20px 0;
         p {
             margin-bottom: 10px;
-        }    
+        }
         span {
             font-size: 1.28571428571em;
-            font-family: 'BodoniMTRegular';            
+            font-family: 'BodoniMTRegular';
         }
     }
 }
