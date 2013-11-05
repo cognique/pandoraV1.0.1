@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script>
+        screenWidth = screen.width;
+        viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute('content','width=' + screenWidth + ',initial-scale=1');
+    </script>
     <link rel="stylesheet" type="text/css" href="css/compiled/style.css">
 </head>
 <body onload="renderHTML.renderHomePage()">
