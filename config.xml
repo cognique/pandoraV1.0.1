@@ -25,6 +25,11 @@
 
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
 
+    <gap:plugin name="com.phonegap.plugins.facebookconnect">
+        <param name="APP_ID" value="491627374259881" />
+        <param name="APP_NAME" value="pandoraapp" />
+    </gap:plugin>
+
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
     <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
