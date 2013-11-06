@@ -339,7 +339,7 @@ var questions_answers_images = { "questions_answers" : [   // questions_answers 
     { "optionA" : "Christian Lacroix",        // Series of questions - #60
       "optionB" : "Alexander Qang",
       "optionC" : "Anne Klein",
-      "image"   : "expert/Christian-Lacroix-1" },     
+      "image"   : "expert/Christian-Lacroix-1" },
     ] // End "questions_answers_images" array.
 
 } // End questions_answers_images
@@ -453,7 +453,7 @@ var renderHTML = {
             '<a href="#" onclick="renderHTML.renderQuestionPage_fromLevelsPage(56)" class="small-button levels 57">17</a>' +
             '<a href="#" onclick="renderHTML.renderQuestionPage_fromLevelsPage(57)" class="small-button levels 58">18</a>' +
             '<a href="#" onclick="renderHTML.renderQuestionPage_fromLevelsPage(58)" class="small-button levels 59">19</a>' +
-            '<a href="#" onclick="renderHTML.renderQuestionPage_fromLevelsPage(59)" class="small-button levels 60">20</a>' +    
+            '<a href="#" onclick="renderHTML.renderQuestionPage_fromLevelsPage(59)" class="small-button levels 60">20</a>' +
             '</div>' +
             '</section>';
 
@@ -471,7 +471,7 @@ var renderHTML = {
     },
 
     renderQuestionPage_fromLevelsPage : function(level) {
-        
+
         scoreCalculations.stopPointCarrying()
         // resets the score if the score is above 20 i.e. playing one level after the other
         scoreCalculations.resetScore();
@@ -533,7 +533,7 @@ var renderHTML = {
         // prevent player from navigating backwards to a previous level and altering scores
         if ((levelAccessNumber == 0) || (levelAccessNumber == 20) || (levelAccessNumber == 40) || (levelAccessNumber == 60)) {
             overallScore = 0;
-            $(".back").addClass("disable");         
+            $(".back").addClass("disable");
         }
 
     },
@@ -601,10 +601,10 @@ var renderHTML = {
         // prevent player from navigating backwards to a previous level and altering scores
         if ((levelAccessNumber == 0) || (levelAccessNumber == 20) || (levelAccessNumber == 40) || (levelAccessNumber == 60)) {
             overallScore = 0;
-            $(".back").addClass("disable");         
+            $(".back").addClass("disable");
         }
 
-    },  
+    },
 
     childBrowserFunctionFACEScore : function() {
 
@@ -639,7 +639,7 @@ var renderHTML = {
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
-        var facebook_url = 
+        var facebook_url =
             "https://www.facebook.com/dialog/feed?" +
             "&name=" + facebookInfo.name +
             "&caption=" + facebookInfo.caption +
@@ -648,8 +648,8 @@ var renderHTML = {
             "&app_id=491627374259881" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-      
-      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });      
+
+      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });
     },
 
     renderScorePage : function() {
@@ -678,7 +678,7 @@ var renderHTML = {
         //     link: 'http://www.pandoradressagency.co.uk/'
         // };
 
-        // var facebook_url = 
+        // var facebook_url =
         //     "https://www.facebook.com/dialog/feed?" +
         //     "&name=" + facebookInfo.name +
         //     "&caption=" + facebookInfo.caption +
@@ -731,9 +731,9 @@ var renderHTML = {
             case ((levelAccessNumber >= 41) && (levelAccessNumber <= 60)):
                 var level = 'expert';
                 break;
-        }      
+        }
       //window.open("http://www.pandoradressagency.com/the-designer-label-game-answers/" + level + "/");
-      window.plugins.childBrowser.showWebPage("http://www.pandoradressagency.com/the-designer-label-game-answers/" + level + "/", { showLocationBar: true });      
+      window.plugins.childBrowser.showWebPage("http://www.pandoradressagency.com/the-designer-label-game-answers/" + level + "/", { showLocationBar: true });
     },
 
     // setStatusWithFeedDialog : function() {
@@ -784,7 +784,7 @@ var renderHTML = {
             center: new google.maps.LatLng(51.498929,-0.166554),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);        
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     },
 
     renderBuyingSellingPage : function() {
@@ -815,7 +815,7 @@ var renderHTML = {
             link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         };
 
-        var facebook_url = 
+        var facebook_url =
             "https://www.facebook.com/dialog/feed?" +
             "&name=" + facebookInfo.name +
             "&caption=" + facebookInfo.caption +
@@ -824,8 +824,8 @@ var renderHTML = {
             "&app_id=491627374259881" +
             "&display=popup" +
             "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-      
-      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });      
+
+      window.plugins.childBrowser.showWebPage(facebook_url, { showLocationBar: true });
     },
 
     childBrowserFunctionTWIT : function() {
@@ -842,7 +842,7 @@ var renderHTML = {
         //     link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
         // };
 
-        // var facebook_url = 
+        // var facebook_url =
         //     "https://www.facebook.com/dialog/feed?" +
         //     "&name=" + facebookInfo.name +
         //     "&caption=" + facebookInfo.caption +
@@ -851,7 +851,7 @@ var renderHTML = {
         //     "&app_id=491627374259881" +
         //     "&display=popup" +
         //     "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
-            
+
         // var facebook_standard = "https://www.facebook.com/dialog/feed?" +
         //     "app_id=145634995501895" +
         //     "&display=popup" +
@@ -866,8 +866,9 @@ var renderHTML = {
             '<div class="content skill-level">' +
             '<a href="#" onclick="renderHTML.childBrowserFunctionFACE()" class="big-button skill-level">FACEBOOK</a>' +
             '<a href="#" onclick="renderHTML.childBrowserFunctionTWIT()" class="big-button skill-level">TWITTER</a>' +
+            '<a href="#" onclick="window.plugins.socialsharing.share('Message only')" class="big-button skill-level">social-share</a>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
-            // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +            
+            // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +
             '</div>' +
             '</section>';
         $('.container').html(html);
@@ -890,7 +891,7 @@ var showHideSkillLevels = {
 
             case ((levelAccessNumber >= 20) && (levelAccessNumber <= 39)):
                 $( ".big-button.skill-level").removeClass("disable");
-                $( ".big-button.skill-level.expert").addClass("disable");   
+                $( ".big-button.skill-level.expert").addClass("disable");
                 break;
 
             case ((levelAccessNumber >= 40) && (levelAccessNumber <= 60)):
@@ -953,7 +954,7 @@ var showHideLevels = {
             ", .small-button.levels.17" +
             ", .small-button.levels.18" +
             ", .small-button.levels.19" +
-            ", .small-button.levels.20" 
+            ", .small-button.levels.20"
             ).addClass("disable");
         }
         if (levelAccessNumber >= 40) {
@@ -975,9 +976,9 @@ var showHideLevels = {
             ", .small-button.levels.37" +
             ", .small-button.levels.38" +
             ", .small-button.levels.39" +
-            ", .small-button.levels.40" 
+            ", .small-button.levels.40"
             ).addClass("disable");
-        }       
+        }
     }
 
 };
@@ -988,19 +989,19 @@ var showHideLevels = {
 var chooseAnswer = {
 
     optionSelectedA : function() {
-        $(".next").removeClass("disable");      
+        $(".next").removeClass("disable");
         $('a.option').removeClass('selected');
         $('a.option.A').addClass('selected');
         answer = true;
     },
     optionSelectedB : function() {
-        $(".next").removeClass("disable");      
+        $(".next").removeClass("disable");
         $('a.option').removeClass('selected');
         $('a.option.B').addClass('selected');
         answer = false;
     },
     optionSelectedC : function() {
-        $(".next").removeClass("disable");      
+        $(".next").removeClass("disable");
         $('a.option').removeClass('selected');
         $('a.option.C').addClass('selected');
         answer = false;
@@ -1018,7 +1019,7 @@ var chooseAnswer = {
             // the score must drop below 0 or points are unfairly undeducted
             if (overallScore == 0) {
                 overallScore = 0;
-            }           
+            }
         }
     },
     // Declare an answer to the question by clicking on the NEXT button
@@ -1038,12 +1039,12 @@ var chooseAnswer = {
             renderHTML.renderScorePage();
         } else {
             renderHTML.renderQuestionPage();
-        }       
+        }
     },
     previousQuestion : function () {
         levelAccessNumber -= 1;
 
-        renderHTML.renderQuestionPage();        
+        renderHTML.renderQuestionPage();
     }
 };
 
@@ -1071,7 +1072,7 @@ var scoreCalculations = {
                 break;
             case ((overallScore >= 17) && (overallScore <= 20)):
                 return "FASHIONADDICT";
-                break;                              
+                break;
         }
     },
     resetScore : function() {
@@ -1092,7 +1093,7 @@ var scoreCalculations = {
         if ((levelAccessNumber == 20) || (levelAccessNumber == 40)) {
             overallScore = 0;
         }
-    },  
+    },
     resetEverything : function() {
         overallScore = 0;
         levelAccessNumber = 0;
