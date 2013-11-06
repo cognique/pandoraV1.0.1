@@ -861,12 +861,14 @@ var renderHTML = {
 
         // var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Pandora%20App%20Game";
 
+        var string = "123123123123123";
+
         var html =
             '<section class="skill-level-page">' +
             '<div class="content skill-level">' +
             '<a href="#" onclick="renderHTML.childBrowserFunctionFACE()" class="big-button skill-level">FACEBOOK</a>' +
             '<a href="#" onclick="renderHTML.childBrowserFunctionTWIT()" class="big-button skill-level">TWITTER</a>' +
-            '<a href="#" onclick="window.plugins.socialsharing.share('Message only')" class="big-button skill-level">social-share</a>' +
+            '<button onclick="window.plugins.socialsharing.share('+string+')">message only</button>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +
             '</div>' +
