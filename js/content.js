@@ -868,7 +868,10 @@ var renderHTML = {
             '<div class="content skill-level">' +
             '<a href="#" onclick="renderHTML.childBrowserFunctionFACE()" class="big-button skill-level">FACEBOOK</a>' +
             '<a href="#" onclick="renderHTML.childBrowserFunctionTWIT()" class="big-button skill-level">TWITTER</a>' +
-            '<button onclick="window.plugins.socialsharing.share('+string+')">message only</button>' +
+            '<button onclick="window.plugins.socialsharing.share("string")">message only</button>' +
+            '<button onclick="window.plugins.socialsharing.share(null, null, null, "http://www.google.com")">link only</button>' +
+            '<button onclick="window.plugins.socialsharing.share(null, null, "https://www.google.nl/images/srpr/logo4w.png", null)">image only</button>' +
+            '<button onclick="window.plugins.socialsharing.share("Message, image and link", null, "https://www.google.nl/images/srpr/logo4w.png", "http://www.x-services.nl")">message, image and link</button>' +
             // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
             // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +
             '</div>' +
