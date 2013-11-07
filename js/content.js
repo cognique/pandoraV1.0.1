@@ -831,22 +831,11 @@ var renderHTML = {
     childBrowserFunctionTWIT : function() {
       var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Designer%20Label%20Game";
       window.plugins.childBrowser.showWebPage(twitter_url, { showLocationBar: true });
+    },
+
+    socialSharingPlugin : function() {
+      window.plugins.socialsharing.share('I have been playing the Designer Label Game');
     }
-
-    // renderScoreSharePage : function() {
-
-    //     var html =
-    //         '<section class="skill-level-page">' +
-    //         '<div class="content skill-level">' +
-    //         '<a href="#" onclick="renderHTML.childBrowserFunctionFACE()" class="big-button skill-level">FACEBOOK</a>' +
-    //         '<a href="#" onclick="renderHTML.childBrowserFunctionTWIT()" class="big-button skill-level">TWITTER</a>' +
-    //         '<button onclick="window.plugins.socialsharing.share(\'Ive been playing the Designer Label Game\')">message only</button>' +
-    //         // '<a href="' + facebook_url + '" class="big-button skill-level" target="_blank">FACEBOOK</a>' +
-    //         // '<a href="' + twitter_url + '" class="big-button skill-level" target="_blank">TWITTER</a>' +
-    //         '</div>' +
-    //         '</section>';
-    //     $('.container').html(html);
-    // }
 
 };
 
