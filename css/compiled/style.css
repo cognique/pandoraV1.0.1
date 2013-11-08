@@ -73,8 +73,8 @@ div.container {
 
 @font-face {
   font-family: 'BodoniMTRegular';
-  src: url("font/bod_r.eot");
-  src: url("font/bod_r.eot") format("embedded-opentype"), url("font/bod_r.woff") format("woff"), url("font/bod_r.ttf") format("truetype"), url("font/bod_r.svg#BodoniMTRegular") format("svg"); }
+  src: url("../../font/bod_r.eot");
+  src: url("../../font/bod_r.eot") format("embedded-opentype"), url("../../font/bod_r.woff") format("woff"), url("../../font/bod_r.ttf") format("truetype"), url("../../font/bod_r.svg#BodoniMTRegular") format("svg"); }
 
 div.page {
   float: left;

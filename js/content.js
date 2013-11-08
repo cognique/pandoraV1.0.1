@@ -362,6 +362,12 @@ var renderHTML = {
         $('.container').html(html);
     // resets the score if the score is above 20 i.e. playing one level after the other
     scoreCalculations.resetScore();
+
+    if (levelAccessNumber > 59) {
+        // reset the game
+        levelAccessNumber = 0;
+    }
+
     },
 
     renderSkillLevelPage : function() {
@@ -524,9 +530,9 @@ var renderHTML = {
             '</div>' +
             '</section>';
         $('.container').html(html);
-            console.log("The current score is " + overallScore);
-            console.log("The level access number is index " + levelAccessNumber);
-            console.log("===================================");
+            // console.log("The current score is " + overallScore);
+            // console.log("The level access number is index " + levelAccessNumber);
+            // console.log("===================================");
 
         $(".next").addClass("disable");
 
@@ -591,10 +597,10 @@ var renderHTML = {
             '</div>' +
             '</section>';
         $('.container').html(html);
-            console.log("The current score is " + overallScore);
-            console.log("The current local question number is " + localQuestionNumber);
-            console.log("The level access number is index " + levelAccessNumber);
-            console.log("===================================");
+            // console.log("The current score is " + overallScore);
+            // console.log("The current local question number is " + localQuestionNumber);
+            // console.log("The level access number is index " + levelAccessNumber);
+            // console.log("===================================");
 
         $(".next").addClass("disable");
 
@@ -716,6 +722,7 @@ var renderHTML = {
         if (levelAccessNumber > 59) {
             $('a.big-button.score-page.next-round').addClass('disable');
         }
+
     },
 
     childBrowserGameAnswers : function() {
