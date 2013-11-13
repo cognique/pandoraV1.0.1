@@ -642,7 +642,7 @@ var renderHTML = {
             name: 'Pandora%20Dress%20Agency',
             caption: 'The%20Designer%20Label%20Game',
             description: ranking + '%3A%20I%20scored%20'+ percentage + '%25%20on%20' + level + '%20level',
-            link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
+            link: 'http%3A%2F%2Fwww.pandoradressagency.com%2F'
         };
 
         var facebook_url =
@@ -819,7 +819,7 @@ var renderHTML = {
             name: 'Pandora%20Dress%20Agency',
             caption: 'The%20Designer%20Label%20Game',
             description: 'Available%20in%20the%20App%20Store%20and%20Google%20Play',
-            link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
+            link: 'http%3A%2F%2Fwww.pandoradressagency.com%2F'
         };
 
         var facebook_url =
