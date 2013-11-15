@@ -631,13 +631,6 @@ var renderHTML = {
                 break;
         }
 
-        // var facebookInfo = {
-        //     name: 'PandoraDressAgency',
-        //     caption: 'TheGameApp',
-        //     description: ranking + ':Iscored' + percentage + '%on' + level + 'Level',
-        //     link: 'https%3A%2F%2Fwww.pandoradressagency.co.uk%2F'
-        // };
-
         var facebookInfo = {
             name: 'Pandora%20Dress%20Agency',
             caption: 'The%20Designer%20Label%20Game',
@@ -676,23 +669,6 @@ var renderHTML = {
                 var level = 'Expert';
                 break;
         }
-
-        // var facebookInfo = {
-        //     name: 'Pandora Dress Agency',
-        //     caption: 'The Game App',
-        //     description: ranking + ': I scored ' + percentage + '% on ' + level + ' Level',
-        //     link: 'http://www.pandoradressagency.co.uk/'
-        // };
-
-        // var facebook_url =
-        //     "https://www.facebook.com/dialog/feed?" +
-        //     "&name=" + facebookInfo.name +
-        //     "&caption=" + facebookInfo.caption +
-        //     "&description=" + facebookInfo.description +
-        //     "&link=" + facebookInfo.link +
-        //     "&app_id=491627374259881" +
-        //     "&display=popup" +
-        //     "&next=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D25%23cb%3Df1b39d2e98%26origin%3Dhttp%253A%252F%252Fpamela.cognique.co.uk%252Ffa0a82d7c%26domain%3Dpamela.cognique.co.uk%26relation%3Dopener%26frame%3Df2d2a921b%26result%3D%2522xxRESULTTOKENxx%2522";
 
         var html =
             '<section class="score-page">' +
