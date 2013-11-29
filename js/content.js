@@ -817,7 +817,7 @@ var renderHTML = {
     },
 
     socialSharingPlugin : function() {
-      window.plugins.socialsharing.share('I have been playing the Designer Label Game');
+      window.plugins.socialsharing.share('I have been playing the Designer Label Game http://www.pandoradressagency.com/');
     }
 
 };
