@@ -812,7 +812,7 @@ var renderHTML = {
     },
 
     childBrowserFunctionTWIT : function() {
-      var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Designer%20Label%20Game";
+      var twitter_url = "https://twitter.com/intent/tweet?text=I%27ve%20been%20playing%20the%20Designer%20Label%20Game%20http%3A%2F%2Fwww.pandoradressagency.com%2F";
       window.plugins.childBrowser.showWebPage(twitter_url, { showLocationBar: true });
     },
 
